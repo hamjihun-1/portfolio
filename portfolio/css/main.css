@@ -266,7 +266,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 .index .list ul li a::before {
     content: "";
@@ -277,9 +276,8 @@
     width: 0;
     height: 100%;
     background-color: #FF5F00;
-    transition: 0.5s;
+    transition: 0.7s;
 }
-
 .index .list ul li a h3 {
     font-size: 40px;
     font-weight: 700;
@@ -611,6 +609,17 @@
     font-weight: 700;
     color: #F2D7A6;
 }
+.cbnu > a {
+    display: block;
+}
+.cbnu > a .photo {
+    overflow: hidden;
+}
+.cbnu > a .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* 충북대학교박물관 페이지 종료 */
 
 .end .wrapper {
@@ -659,4 +668,26 @@
 .end .footer ul li span.cont {
     color: #FF5F00;
     font-size: 24px;
+}
+.cursor { 
+	position: absolute;  /* 반드시 absolute여야 하고 위치는 jquery에서 적용 시킴 */
+	z-index: 1000;
+	transform: translate(-50%, -50%); /* 커서 위치 조정 */
+	pointer-events: none; /* 생성된 cursor에 마우스 오버 이벤트를 주지 않기 - 이걸 주지 않으면 cursor에 마우스가 오버된 것으로 인식되어 하단 요소가 클릭되지 않음 */
+	display:none; /* 평소에는 보이지 않게 하기 위해서 - 만약 원래도 따라다니는 마우스 포인터를 디자인하려면 스타일을 주면 됨. */
+}
+.cursor.on {
+	display: block;  /* jquery에서 특정 요소에 마우스를 오버하면 class명을 추가해주고 그때 나타남 */
+	/* 기본적인 스타일 주기 */
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #C9A86A;
+    color: #fff;
+	
+}
+.photo_wrap {
+	cursor: none !important; /* 만약 마우스 오버 시 생성한 cursor만 나타나고 실제 마우스 포인터는 안보이게 하려면 오버하는 요소에서 마우스 포인트를 안보이게 해야 함 */
 }
