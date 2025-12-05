@@ -3,16 +3,16 @@
 @import url(common.css);
 @import url(layout.css);
 
-.visual {
+.main {
     position: relative;
 }
-.visual .wrapper {
+.main .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100dvh;
 }
-.visual .tit strong {
+.main .tit strong {
     padding: 7px 23px;
     background-color: #FF5F00;
     border-radius: 40px;
@@ -20,23 +20,23 @@
     font-weight: 700;
     font-family: 'Pretendard';
 }
-.visual .tit h2 {
+.main .tit h2 {
     font-size: 180px;
     font-weight: 800;
     line-height: 1.3;
     color: #FF5F00;
     margin: 0 0 10px 0;
 }
-.visual .tit p {
+.main .tit p {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.3;
 }
-.visual .tit p span {
+.main .tit p span {
     position: relative;
     padding-left: 165px;
 }
-.visual .tit p span::before {
+.main .tit p span::before {
     content: "";
     position: absolute;
     left: 0;
@@ -46,20 +46,20 @@
     height: 5px;
     background-color: #fff;
 }
-.visual .list ul {
+.main .list ul {
     display: flex;
     flex-direction: column;
     gap: 96px 0;
 }
-.visual .list ul li {
+.main .list ul li {
     font-size: 24px;
     font-weight: 700;
     font-family: 'Pretendard';
 }
-.visual .list ul li span {
+.main .list ul li span {
     position: relative;
 }
-.visual .list ul li span::before {
+.main .list ul li span::before {
     content: "";
     position: absolute;
     left: 0;
@@ -68,14 +68,14 @@
     height: 5px;
     background-color: #FF5F00;
 }
-.visual .scroll {
+.main .scroll {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 10%;
     font-size: 15px;
 }
-.visual .scroll::before {
+.main .scroll::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -93,4 +93,570 @@
     0% { bottom: -30px;}    
     50% { bottom: -40px;}
     100% { bottom: -30px;}
+}
+
+.about .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .left .top {
+    overflow: hidden;
+}
+.about .left .top img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.about .left .bottom {
+    margin: 50px 0 0 0;
+}
+.about .left .bottom h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #FF5F00;
+    margin: 0 0 30px 0;
+}
+.about .left .bottom h2 span {
+    font-size: 45px;
+    color: #fff;
+}
+.about .left .bottom p {
+    position: relative;
+}
+.about .left .bottom p::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -18px;
+    width: 32px;
+    height: 5px;
+    background-color: #FF5F00;
+}
+.about .right {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    font-family: 'Pretendard';
+}
+.about .right h3 {
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    line-height: 1.3;
+    color: #FF5F00;
+    margin: 0 0 40px 0;
+    position: relative;
+}
+.about .right h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100%;
+    height: 3px;
+    background-color: #FF5F00;
+}
+.about .right .top {
+    margin: 94px 0 68px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.about .right .top .iam ul li {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    column-gap: 30px;
+}
+.about .right .top .iam ul li:first-child {
+    padding: 0 0 6px 0;
+}
+.about .right .top .iam ul li + li {
+    padding: 6px 0;
+}
+.about .right .top .iam ul li strong {
+    color: #FF5F00;
+    opacity: 0.7;
+}
+.about .right .top .education ul li {
+    display: grid;
+    grid-template-columns: 257px 1fr;
+    column-gap: 110px;
+}
+.about .right .top .education ul li + li {
+    padding: 12px 0 0 0;
+}
+.about .right .top .education ul li span {
+    font-size: 15px;
+    color: var(--color-white50);
+}
+.about .right .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.about .right .bottom .lisence ul li {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    column-gap: 121px;
+}
+.about .right .bottom .lisence ul li:first-child {
+    padding: 0 0 6px 0;
+}
+.about .right .bottom .lisence ul li + li {
+    padding: 6px 0;
+}
+.about .right .bottom .lisence ul li span {
+    font-size: 15px;
+    color: var(--color-white50);
+}
+.about .right .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 0;
+    width: 400px;
+}
+.about .right .skills ul li {
+    width: 25%;
+}
+.about .right .skills ul li .photo {
+    height: 40px;
+    overflow: hidden;
+}
+.about .right .skills ul li .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.about .right .skills ul li .txt {
+    margin: 13px 0 0 0;
+    text-align: center;
+}
+
+.index {
+    color: #FF5F00;
+}
+.index .tit {
+    font-size: 120px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+.index .tit span {
+    position: relative;
+}
+.index .tit span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 3px;
+    background-color: #FF5F00;
+}
+.index .list {
+    margin: 100px 0 0 0;
+}
+.index .list ul li {
+    border-bottom: 1px solid rgba(255, 95, 0, 0.5);
+}
+.index .list ul li a {
+    position: relative;
+    height: 112px;
+    font-family: 'Pretendard';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.index .list ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background-color: #FF5F00;
+    transition: 0.5s;
+}
+
+.index .list ul li a h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+    position: relative;
+}
+.index .list ul li a h3::after {
+    display: none;
+    content: "";
+    position: absolute;
+    right: -106px;
+    top: 15px;
+    width: 67.5px;
+    height: 19px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 73 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 20H68.5L35.591 1' stroke='%23111111' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+}
+.index .list ul li a h3 span {
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    padding: 0 0 0 10px;
+}
+.index .list ul li a > span {
+    font-size: 15px;
+    color: var(--color-white50);
+}
+/* li:hover시 스타일 */
+.index .list ul li:hover a::before {
+    width: 100%;
+}
+.index .list ul li:hover a h3,
+.index .list ul li:hover a h3 span,
+.index .list ul li:hover a > span {
+    color: #111;
+}
+.index .list ul li:hover a h3::after {
+    display: block;
+    animation: arrow 1s infinite linear;
+}
+@keyframes arrow {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(20px);}
+    100% {transform: translateX(0);}
+}
+.index .list ul li:hover a h3 {
+    padding: 0 0 0 20px;
+}
+.index .list ul li:hover a > span {
+    padding: 0 20px 0 0;
+}
+/* li:hover시 스타일 */
+/* 일품미가 페이지 시작 */
+.ipmg {
+    position: relative;
+    background-color: #3C312B;
+}
+.ipmg::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100dvh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+.ipmg .wrapper {
+    padding: 100px 0 0 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ipmg .txt h2 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.ipmg .txt > strong {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #C79A63;
+    margin: 40px 0 20px 0;
+}
+.ipmg .txt p {
+    margin: 0 0 60px 0;
+}
+.ipmg .txt a {
+    display: inline-block;
+    padding: 12px 66px 12px 22px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+.ipmg .txt a span {
+    position: relative;
+}
+.ipmg .txt a span::before {
+    content: "";
+    position: absolute;
+    right: -44px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.4 13L0 11.6L9.6 2H1V0H13V12H11V3.4L1.4 13Z' fill='white'/%3E%3C/svg%3E%0A");
+    transition: 0.3s;
+}
+/* a hover시 스타일 */
+.ipmg .txt a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.ipmg .txt a:hover span::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.4 13L0 11.6L9.6 2H1V0H13V12H11V3.4L1.4 13Z' fill='%23000000'/%3E%3C/svg%3E%0A");
+}
+/* a hover시 스타일 */
+.ipmg .txt ul {
+    margin: 100px 0 0 0;
+    font-family: 'Pretendard';
+}
+.ipmg .txt ul li {
+    display: grid;
+    grid-template-columns: 66px 1fr;
+    column-gap: 30px;
+    font-size: 19px;
+}
+.ipmg .txt ul li:first-child {
+    margin: 0 0 5px 0;
+}
+.ipmg .txt ul li + li {
+    padding: 5px 0;
+}
+.ipmg .txt ul li strong {
+    font-weight: 700;
+    color: #C79A63;
+}
+/* 일품미가 페이지 종료 */
+
+/* 서울올림픽파크텔 페이지 시작 */
+.sop {
+    position: relative;
+    background-color: #0E3B2F;
+}
+.sop::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100dvh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+.sop .wrapper {
+    padding: 100px 0 0 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sop .txt h2 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.sop .txt > strong {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #C9A86A;
+    margin: 40px 0 20px 0;
+}
+.sop .txt p {
+    margin: 0 0 60px 0;
+}
+.sop .txt a {
+    display: inline-block;
+    padding: 12px 66px 12px 22px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+.sop .txt a span {
+    position: relative;
+}
+.sop .txt a span::before {
+    content: "";
+    position: absolute;
+    right: -44px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.4 13L0 11.6L9.6 2H1V0H13V12H11V3.4L1.4 13Z' fill='white'/%3E%3C/svg%3E%0A");
+    transition: 0.3s;
+}
+/* a hover시 스타일 */
+.sop .txt a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.sop .txt a:hover span::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.4 13L0 11.6L9.6 2H1V0H13V12H11V3.4L1.4 13Z' fill='%23000000'/%3E%3C/svg%3E%0A");
+}
+/* a hover시 스타일 */
+.sop .txt ul {
+    margin: 100px 0 0 0;
+    font-family: 'Pretendard';
+}
+.sop .txt ul li {
+    display: grid;
+    grid-template-columns: 66px 1fr;
+    column-gap: 30px;
+    font-size: 19px;
+}
+.sop .txt ul li:first-child {
+    margin: 0 0 5px 0;
+}
+.sop .txt ul li + li {
+    padding: 5px 0;
+}
+.sop .txt ul li strong {
+    font-weight: 700;
+    color: #C9A86A;
+}
+/* 서울올림픽파크텔 페이지 종료 */
+
+/* 충북대학교박물관 페이지 시작 */
+.cbnu {
+    position: relative;
+    background-color: #B72654;
+}
+.cbnu::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100dvh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+.cbnu .wrapper {
+    padding: 100px 0 0 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cbnu .txt h2 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.cbnu .txt > strong {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #F2D7A6;
+    margin: 40px 0 20px 0;
+}
+.cbnu .txt p {
+    margin: 0 0 60px 0;
+}
+.cbnu .txt a {
+    display: inline-block;
+    padding: 12px 66px 12px 22px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+.cbnu .txt a span {
+    position: relative;
+}
+.cbnu .txt a span::before {
+    content: "";
+    position: absolute;
+    right: -44px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.4 13L0 11.6L9.6 2H1V0H13V12H11V3.4L1.4 13Z' fill='white'/%3E%3C/svg%3E%0A");
+    transition: 0.3s;
+}
+/* a hover시 스타일 */
+.cbnu .txt a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.cbnu .txt a:hover span::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.4 13L0 11.6L9.6 2H1V0H13V12H11V3.4L1.4 13Z' fill='%23000000'/%3E%3C/svg%3E%0A");
+}
+/* a hover시 스타일 */
+.cbnu .txt ul {
+    margin: 100px 0 0 0;
+    font-family: 'Pretendard';
+}
+.cbnu .txt ul li {
+    display: grid;
+    grid-template-columns: 66px 1fr;
+    column-gap: 30px;
+    font-size: 19px;
+}
+.cbnu .txt ul li:first-child {
+    margin: 0 0 5px 0;
+}
+.cbnu .txt ul li + li {
+    padding: 5px 0;
+}
+.cbnu .txt ul li strong {
+    font-weight: 700;
+    color: #F2D7A6;
+}
+/* 충북대학교박물관 페이지 종료 */
+
+.end .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: calc(100dvh - 100px);
+}
+.end .txt {
+    position: relative;
+    text-align: center;
+}
+.end .txt::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 689px;
+    height: 689px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/main/end/end_bg.png);
+}
+.end .txt h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 120px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #FF5F00;
+    margin: 0 0 30px 0;
+}
+.end .footer {
+    display: block;
+    margin: 170px 0 0 0;
+    border-top: 1px solid #FF5F00;
+    padding: 20px;
+}
+.end .footer ul {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+}
+.end .footer ul li span.cont {
+    color: #FF5F00;
+    font-size: 24px;
 }

@@ -2,6 +2,7 @@ header {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 999;
     width: 100%;
     border-bottom: 1px solid var(--color-white20);
 }
@@ -17,10 +18,14 @@ header .logo a {
     font-weight: 700;
     line-height: 100px;
 }
+header .logo a:hover {
+    color: #FF5F00;
+}
 header .gnb .gnb_wrap ul {
     display: flex;
 }
 header .gnb .gnb_wrap ul li a {
+    display: block;
     padding: 0 25px;
     font-size: 20px;
 }
