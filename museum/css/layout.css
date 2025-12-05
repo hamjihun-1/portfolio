@@ -1,0 +1,371 @@
+/**********************
+* 파일명 : layout.css
+* 작성자 : 함지훈
+* 작성일 : 25-11-28
+* 설  명 : header/footer 스타일을 선언함
+**********************/
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: var(--header-h);
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+header .head_top {
+    height: var(--header-h);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .head_top .logo a {
+    display: block;
+    margin-left: var(--wrapper-margin);
+    width: 214px;
+    height: 47px;
+    background: url(../images/common/logo/logo_w.svg) no-repeat center center / contain;
+}
+header .head_top .menu_open {
+    display: block;
+    margin-right: var(--wrapper-margin);
+    width: 35px;
+    height: 35px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 27 21' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.45833 2.91667C1.04514 2.91667 0.698785 2.77691 0.419271 2.4974C0.139757 2.21788 0 1.87153 0 1.45833C0 1.04514 0.139757 0.698785 0.419271 0.419271C0.698785 0.139757 1.04514 0 1.45833 0H24.7917C25.2049 0 25.5512 0.139757 25.8307 0.419271C26.1102 0.698785 26.25 1.04514 26.25 1.45833C26.25 1.87153 26.1102 2.21788 25.8307 2.4974C25.5512 2.77691 25.2049 2.91667 24.7917 2.91667H1.45833ZM1.45833 20.4167C1.04514 20.4167 0.698785 20.2769 0.419271 19.9974C0.139757 19.7179 0 19.3715 0 18.9583C0 18.5451 0.139757 18.1988 0.419271 17.9193C0.698785 17.6398 1.04514 17.5 1.45833 17.5H24.7917C25.2049 17.5 25.5512 17.6398 25.8307 17.9193C26.1102 18.1988 26.25 18.5451 26.25 18.9583C26.25 19.3715 26.1102 19.7179 25.8307 19.9974C25.5512 20.2769 25.2049 20.4167 24.7917 20.4167H1.45833ZM1.45833 11.6667C1.04514 11.6667 0.698785 11.5269 0.419271 11.2474C0.139757 10.9679 0 10.6215 0 10.2083C0 9.79514 0.139757 9.44878 0.419271 9.16927C0.698785 8.88976 1.04514 8.75 1.45833 8.75H24.7917C25.2049 8.75 25.5512 8.88976 25.8307 9.16927C26.1102 9.44878 26.25 9.79514 26.25 10.2083C26.25 10.6215 26.1102 10.9679 25.8307 11.2474C25.5512 11.5269 25.2049 11.6667 24.7917 11.6667H1.45833Z' /%3E%3C/svg%3E%0A");
+}
+header .head_top .menu_close {
+    display: none;
+}
+@media screen and (min-width:1170px){
+    /*open클래스가 추가 돼었을 때*/
+    header.open {
+        background-color: #fff;
+        width: 100%;
+        height: var(--header-h);
+    }
+    header.open .head_top .logo a {
+        background-image: url(../images/common/logo/logo_r.svg);
+    }
+    header.open .head_top .menu_open {
+        display: none;
+    }
+    header.open .head_top .menu_close {
+        display: block;
+        margin-right: var(--wrapper-margin);
+        width: 35px;
+        height: 35px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 21 21' fill='%23111111' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.04167 20.4167L0 18.375L8.16667 10.2083L0 2.04167L2.04167 0L10.2083 8.16667L18.375 0L20.4167 2.04167L12.25 10.2083L20.4167 18.375L18.375 20.4167L10.2083 12.25L2.04167 20.4167Z' /%3E%3C/svg%3E%0A");
+    }
+    header.open .full_menu {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        background-color: #fff;
+    }
+    header.open .full_menu .menu_list ul.depth1 {
+        display: flex;
+        justify-content: flex-end;
+        height: 700px;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li {
+        width: 15%;
+        position: relative;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 85px;
+        width: 1px;
+        height: 90%;
+        background-color: #ccc;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > a {
+        display: block;
+        line-height: 85px;
+        background-color: #252525;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 700;
+        text-align: center;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li:hover > a,
+    header.open .full_menu .menu_list ul.depth1 > li > a:focus {
+        color: #E86E88;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li:hover {
+        background-color: #f9f9f9;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 {
+        margin-top: 30px;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li {
+        padding:0 25px 15px 25px;
+        white-space: nowrap;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > a {
+        display: block;
+        font-size: 15px;
+        font-weight: 700;
+        color: #111;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > a span {
+        position: relative;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > a span::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 1px;
+        background-color: #111;
+        transition: 0.3s;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > a:hover span::before {
+        width: 100%;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > ul.depth3 > li {
+        padding: 15px 0 10px 10px;
+        white-space: wrap;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > ul.depth3 > li + li {
+        padding: 0 0 10px 10px;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > ul.depth3 > li > a {
+        display: block;
+        font-size: 13px;
+        padding-left: 10px;
+        position: relative;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > ul.depth3 > li > a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3px;
+        height: 3px;
+        background-color: #555;
+        border-radius: 50%;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > ul.depth3 > li > a > span {
+        position: relative;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > ul.depth3 > li > a > span::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 1px;
+        background-color: #555;
+        transition: 0.3s;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > ul.depth3 > li > a:hover > span::before {
+        width: 100%;
+    }
+    /* open클래스가 추가 돼었을 때 */
+}/*@media*/
+@media screen and (max-width:1169px){
+    /*open클래스가 추가 돼었을 때*/
+    header.open {
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+        height: var(--header-h);
+    }
+    header.open .head_top .logo a {
+        background-image: url(../images/common/logo/logo_r.svg);
+    }
+    header.open .head_top .menu_open {
+        display: none;
+    }
+    header.open .head_top .menu_close {
+        display: block;
+        margin-right: var(--wrapper-margin);
+        width: 35px;
+        height: 35px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 21 21' fill='%23111111' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.04167 20.4167L0 18.375L8.16667 10.2083L0 2.04167L2.04167 0L10.2083 8.16667L18.375 0L20.4167 2.04167L12.25 10.2083L20.4167 18.375L18.375 20.4167L10.2083 12.25L2.04167 20.4167Z' /%3E%3C/svg%3E%0A");
+    }
+    header.open .full_menu {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        background-color: #fff;
+    }
+    /* open클래스가 추가 돼었을 때 */
+    header.open .full_menu .menu_list ul.depth1 {
+        height: calc(100dvh - var(--header-h));
+        overflow-y: auto;
+        border-top: 1px solid #ccc;
+        padding-top: 15px;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > a {
+        display: block;
+        padding: 22px 0 22px var(--wrapper-margin);
+        font-size: 1.9rem;
+        font-weight: 700;
+        line-height: 1.3;
+        color: #111;
+        position: relative;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > a::before,
+    header.open .full_menu .menu_list ul.depth1 > li > a::after {
+        content: "";
+        position: absolute;
+        right: var(--wrapper-margin);
+        top: 45%;
+        width: 16px;
+        height: 2px;
+        background-color: #111;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > a::after {
+        transform: rotate(-90deg);
+        transition: transform 0.5s;
+    }
+    /* 시작::open 클래스가 들어갔을 때 */
+    header.open .full_menu .menu_list ul.depth1 > li.open > a {
+        color: #B72654;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li.open > a::before,
+    header.open .full_menu .menu_list ul.depth1 > li.open > a::after {
+       background-color: #B72654;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li.open > a::after {
+        transform: rotate(0)
+    }
+    /* 끝::open 클래스가 들어갔을 때 */
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 {
+        display: none;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > a {
+        display: block;
+        padding: 10px 0 10px 35px;
+        color: #111;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > ul.depth3 {
+        padding: 10px 0;
+        background-color: #f7f7f7;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > ul.depth3 > li > a {
+        display: block;
+        padding: 10px 0 10px 60px;
+        font-size: 15px;
+        position: relative;
+    }
+    header.open .full_menu .menu_list ul.depth1 > li > ul.depth2 > li > ul.depth3 > li > a::before {
+        content: "";
+        position: absolute;
+        left: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        background-color: #555;
+        border-radius: 50%;
+    }
+}/*@media*/
+@media screen and (max-width:768px){
+    header .head_top .logo a {
+        width: 110px;
+        height: 24px;
+    }
+    header .head_top .menu_open {
+        width: 25px;
+        height: 25px;
+    }
+    header.open .head_top .menu_close {
+        width: 22px;
+        height: 22px;
+    }
+}
+header .full_menu {
+    display: none; /* 전체메뉴 눌러야 나타남 */
+}
+
+footer .f_top {
+    
+    border-top: 1px solid #ccc;
+}
+footer .f_top ul {
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 50px;
+    height: 90px;
+}
+footer .f_top ul::-webkit-scrollbar {
+    display: none;
+}
+footer .f_top ul li a {
+    display: block;
+}
+footer .f_top ul li a img {
+    width: 100%;
+    height: 40px;
+    object-fit: contain;
+}
+footer .f_bottom {
+    background-color: #111;
+    padding: 50px 0 60px 0;
+}
+footer .f_bottom .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+footer .f_bottom .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+footer .f_bottom .inner .f_nav a {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.3;
+}
+footer .f_bottom .inner .f_info {
+    margin: 20px 0;
+}
+@media screen and (max-width:1024px){
+    footer .f_top ul {
+        justify-content: flex-start;
+        gap: 0;
+        padding: 0 var(--wrapper-margin);
+    }
+    footer .f_top ul li a img {
+        width: 200px;
+        height: 40px;
+        object-fit: contain;
+    }
+}
+@media screen and (max-width:768px){
+    footer .f_top ul li a img {
+        width: 150px;
+        height: 30px;
+        object-fit: contain;
+    }
+    footer .f_bottom .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .f_bottom .logo {
+        margin-bottom: 30px;
+    }
+    footer .f_bottom .inner .f_info {
+        line-height: 1.8;
+    }
+}

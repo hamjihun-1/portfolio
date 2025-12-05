@@ -1,0 +1,14 @@
+/* 서체 */
+@font-face {
+    font-family: 'Escoredream';
+    src: url('../fonts/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Escoredream';
+    src: url('../fonts/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}

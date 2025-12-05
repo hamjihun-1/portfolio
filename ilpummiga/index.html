@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--라이브러리 파일-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    
+    <!--개인 파일-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>일품미가</title>
+</head>
+<body>
+    <div id="wrap">
+        <!-- pc버전에서 메뉴에 오버하면 menu_pc 클래스 추가
+             모바일버전에서 메뉴를 열면 menu_mo 클래스 추가
+             header가 상단에 고정될 때 fiexd 클래스 추가  -->
+        <header>
+            <h1 class="logo"><a href="index.html"><span class="blind">ilpummiga</span></a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"><span class="blind">메뉴열기</span></button>
+                <div class="gnb_wrap">
+                    <div class="gnb_logo"><span class="blind">ilpummiga</span></div>
+                    <ul class="depth1">
+                        <!-- pc버전 : 오버한 li에 over를 추가
+                             모바일버전 : 메뉴 열리면 li에 open을 추가 -->
+                        <li>
+                            <a href="#n"><span>기업소개</span></a>
+                        </li>
+                        <li>
+                            <a href="#n"><span>제품소개</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>넛버터</span></a></li>
+                                <li><a href="#n"><span>견과류</span></a></li>
+                                <li><a href="#n"><span>건수산물</span></a></li>
+                                <li><a href="#n"><span>통곡물</span></a></li>
+                                <li><a href="#n"><span>건과일</span></a></li>
+                                <li><a href="#n"><span>왕도매</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>리뷰/후기</span></a>
+                        </li>
+                        <li>
+                            <a href="#n"><span>이벤트</span></a>
+                        </li>
+                        <li>
+                            <a href="#n"><span>고객센터</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>공지사항</span></a></li>
+                                <li><a href="#n"><span>1:1 문의하기</span></a></li>
+                                <li><a href="#n"><span>주문/배송 조회</span></a></li>
+                                <li><a href="#n"><span>교환·반품 안내</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
+                </div> <!--gnb_wrap-->
+            </nav> <!--gnb-->
+            <div class="util">
+                <div class="cart"><a href="#n"><span class="blind">장바구니</span></a></div>
+                <div class="mypage"><a href="#n"><span class="blind">마이페이지</span></a></div>
+            </div> <!--util-->
+        </header>
+        <div class="container">
+            <section class="visual">
+                <h2 class="blind">팝업</h2>
+                <div class="swiper"> 
+                    <ul class="swiper-wrapper"> 
+                        <!-- autoplay-자동실행, loop-반복실행, muted-음소거 -->
+                        <li class="swiper-slide">
+                            <div class="video">
+                                <video autoplay loop muted>
+                                    <source src="images/video/visual01.mp4">
+                                </video>
+                            </div> <!--video-->
+                            <div class="txt">
+                                <div class="wrapper">
+                                    <h3>Pure Taste, Honest Nature</h3>
+                                    <p>Crafted with 100% natural <br class="mo_only">ingredients no additives, no compromise</p>
+                                </div> <!--wrapper-->
+                            </div> <!--txt-->
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual_bg2.jpg" alt=""></div>
+                            <div class="txt">
+                                <div class="wrapper">
+                                    <h3>정직함을 담은 고급스러움</h3>
+                                    <p>소중한 사람에게, 자연의 마음을 전하세요.</p>
+                                </div> <!--wrapper-->
+                            </div> <!--txt-->
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual_bg3.jpg" alt=""></div>
+                            <div class="txt">
+                                <div class="wrapper">
+                                    <h3>땅콩버터? 이제 짜 먹을게!</h3>
+                                    <p>간편하게, 언제든 즐기는 땅콩의 진짜 맛</p>
+                                </div> <!--wrapper-->
+                            </div> <!--txt-->
+                        </li>
+                    </ul>
+                    <div class="ctrl_btn">
+                        <div class="paging">
+                            <div class="current">현재팝업번호</div>
+                            <div class="bar"><span></span></div>
+                            <div class="total">전체팝업번호</div>
+                        </div>
+                        <button class="stop">
+                            <span class="blind">일시정지</span>
+                            <i>
+                                <svg viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 14C9.45 14 8.97917 13.8042 8.5875 13.4125C8.19583 13.0208 8 12.55 8 12V2C8 1.45 8.19583 0.979167 8.5875 0.5875C8.97917 0.195833 9.45 0 10 0C10.55 0 11.0208 0.195833 11.4125 0.5875C11.8042 0.979167 12 1.45 12 2V12C12 12.55 11.8042 13.0208 11.4125 13.4125C11.0208 13.8042 10.55 14 10 14ZM2 14C1.45 14 0.979167 13.8042 0.5875 13.4125C0.195833 13.0208 0 12.55 0 12V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0C2.55 0 3.02083 0.195833 3.4125 0.5875C3.80417 0.979167 4 1.45 4 2V12C4 12.55 3.80417 13.0208 3.4125 13.4125C3.02083 13.8042 2.55 14 2 14Z"/>
+                                </svg>
+                            </i>
+                        </button>
+                        <button class="play">
+                            <span class="blind">재생</span>
+                            <i>
+                                <svg viewBox="0 0 11 14" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.675 7.84922C9.825 7.74922 9.9375 7.62422 10.0125 7.47422C10.0875 7.32422 10.125 7.16589 10.125 6.99922C10.125 6.83255 10.0875 6.67422 10.0125 6.52422C9.9375 6.37422 9.825 6.24922 9.675 6.14922L1.525 0.974219C1.44167 0.924219 1.35417 0.886719 1.2625 0.861719C1.17083 0.836719 1.08333 0.824219 1 0.824219C0.733334 0.824219 0.5 0.920052 0.3 1.11172C0.1 1.30339 0 1.54089 0 1.82422V12.1742C0 12.4576 0.1 12.6951 0.3 12.8867C0.5 13.0784 0.733334 13.1742 1 13.1742C1.08333 13.1742 1.17083 13.1617 1.2625 13.1367C1.35417 13.1117 1.44167 13.0742 1.525 13.0242L9.675 7.84922Z"/>
+                                </svg>
+                            </i>
+                        </button>
+                    </div> <!--ctrl_btn-->
+                </div> 
+                <div class="scroll">Scroll Down</div>
+            </section> <!--visual-->
+            <section class="company">
+                <div class="tit">
+                    <div class="wrapper">
+                        <h2>자연 그대로, <br>
+                            건강과 정성의 <span>일품미가</span></h2>
+                        <p>첨가물 없는 원재료와 황토가마 공법으로, 맛과 건강을 모두 담은 신뢰의 간식을 선보입니다.</p>
+                    </div> <!--wrapper-->
+                </div> <!--tit-->
+                <!-- 마우스를 li에 오버하면 오버한 li에는 active 클래스 추가
+                     li를 감싸고 있는 요소 (.list)에도 class(over 추가) -->
+                <div class="list">
+                    <ul>
+                        <li class="company01 ">
+                            <div class="txt">
+                                <h3>무첨가, 자연 건강</h3>
+                                <p>불필요한 화학첨가물과 보존료를 배제하고, 자연이 가진 순수한 맛과 향을 그대로 담았습니다. <br>입안 가득 고소함과 부드러움이 퍼지며, 본연의 풍미를 느낄 수 있습니다.</p>
+                            </div> <!--txt-->
+                        </li>
+                        <li class="company02 ">
+                            <div class="txt">
+                                <h3>황토가마, 깊은 풍미</h3>
+                                <p>독자적인 황토가마 특허 공법을 통해 재료의 본질적인 맛을 섬세하게 살렸습니다. <br>자연의 고소한 향과 깊은 풍미가 조화를 이루며, 부드럽고 풍부한 맛으로 완성되었습니다.</p>
+                            </div> <!--txt-->
+                        </li>
+                        <li class="company03 ">
+                            <div class="txt">
+                                <h3>하루를 채우는 정성</h3>
+                                <p>까다롭게 선별한 원재료와 섬세한 제조 공정을 통해 맛과 건강을 동시에 담아냈습니다. <br>깊은 풍미와 부드러운 식감이 어우러져, 한층 품격 있는 간식으로 완성되었습니다.</p>
+                            </div> <!--txt-->
+                        </li>
+                    </ul>
+                </div> <!--list-->
+            </section> <!--company-->
+            <section class="product">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2><span>N</span>ew Menu</h2>
+                        <p>새로운 맛의 여정</p>
+                    </div> <!--tit-->
+                    <div class="tab_list">
+                        <!-- 선택된 탭에는 active 클래스 추가 
+                                 button안에 span태그한테 선택됨이라고 글자를 써줌
+                             각자의 li에 li를 클릭하면 보일 tab_item의 이름을 써주는 게 좋음
+                             나를 클릭하면 tab_item 중에 item1을 보이게 해줘라고 기록해 놓는게 좋음
+                             그런데 class는 중복해서 다양한 값이 들어가서 class값 하기는 어려움
+                             그래서 별도의 속성명을 써서 사용 data-명칭 속성
+                             css에서 공식으로 지정되어 있는 속성이 아닌 퍼블이 임의로 만든 속성 (많이 씀) -->
+                        <ul>
+                            <li class="item1 active" data-tab="item1"><button>피스타치오 버터<span class="blind">선택됨</span></button></li>
+                            <li class="item2" data-tab="item2"><button>땅콩 버터<span class="blind"></span></button></li>
+                            <li class="item3" data-tab="item3"><button>아몬드 스프레드<span class="blind"></span></button></li>
+                            <li class="item4" data-tab="item4"><button>캐슈넛 버터<span class="blind"></span></button></li>
+                        </ul>
+                    </div> <!--tab_list-->
+                    <div class="tab_content">
+                        <!-- 선택된 tab_item은 active 클래스가 추가 title에 선택됨이라고 써줌-->
+                        <div class="tab_item item1 active" title="선택됨">
+                            <h3 class="blind">피스타치오 버터</h3>
+                            <div class="photo"><img src="images/main/product/product_item01.jpg" alt="피스타치오 버터 대표이미지"></div>
+                            <div class="group">
+                                <div class="txt">
+                                    <strong>Pistachio Butter</strong>
+                                    <h4>피스타치오 버터</h4>
+                                    <p>고소하고 부드러운 피스타치오를 100% 그대로 담은 프리미엄 버터. 불필요한 첨가물 없이 자연의 풍미와 진한 고소함을 온전히 느낄 수 있습니다. 비타민 E와 불포화지방이 풍부해 피부 건강과 혈관 건강에 도움을 주며, 식이섬유와 단백질이 가득해 포만감 있는 건강 간식으로도 완벽합니다.</p>
+                                    <a href="#n"><span class="blind">more</span></a>
+                                </div>
+                                <div class="photo_list">
+                                    <ul>
+                                        <li><img src="images/main/product/product_item01_list01.jpg" alt="피스타치오 버터 상세이미지01"></li>
+                                        <li><img src="images/main/product/product_item01_list02.jpg" alt="피스타치오 버터 상세이미지02"></li>
+                                        <li><img src="images/main/product/product_item01_list03.jpg" alt="피스타치오 버터 상세이미지03"></li>
+                                    </ul>
+                                </div> <!--photo_list-->
+                            </div> <!--group-->
+                        </div> <!--tab_item-->
+                        <div class="tab_item item2">
+                            <h3 class="blind">땅콩 버터</h3>
+                            <div class="photo"><img src="images/main/product/product_item02.jpg" alt="땅콩 버터 대표이미지"></div>
+                            <div class="group">
+                                <div class="txt">
+                                    <strong>peanut butter</strong>
+                                    <h4>땅콩 버터</h4>
+                                    <p>고소한 땅콩을 그대로 갈아 만든 땅콩버터는 단백질과 불포화지방산이 풍부해 포만감을 오래 유지시켜 줍니다. 비타민 E와 마그네슘이 함유되어 피로 회복과 혈관 건강에 도움을 주며, 하루를 든든하게 채워주는 에너지원이 됩니다. 입안 가득 고소한 풍미와 부드러운 질감으로, 누구나 부담 없이 즐길 수 있는 건강한 간식입니다.</p>
+                                    <a href="#n"><span class="blind">more</span></a>
+                                </div>
+                                <div class="photo_list">
+                                    <ul>
+                                        <li><img src="images/main/product/product_item02_list01.jpg" alt="땅콩 버터 상세이미지01"></li>
+                                        <li><img src="images/main/product/product_item02_list02.jpg" alt="땅콩 버터 상세이미지02"></li>
+                                        <li><img src="images/main/product/product_item02_list03.jpg" alt="땅콩 버터 상세이미지03"></li>
+                                    </ul>
+                                </div> <!--photo_list-->
+                            </div> <!--group-->
+                        </div> <!--tab_item-->
+                        <div class="tab_item item3">
+                            <h3 class="blind">아몬드 스프레드</h3>
+                            <div class="photo"><img src="images/main/product/product_item03.jpg" alt="아몬드 스프레드 대표이미지"></div>
+                            <div class="group">
+                                <div class="txt">
+                                    <strong>Almond Spread</strong>
+                                    <h4>아몬드 스프레드</h4>
+                                    <p>고소하고 부드러운 아몬드의 풍미를 그대로 담아낸 건강한 프리미엄 스프레드입니다. 풍부한 비타민 E와 식이섬유가 가득해 피부 건강과 장 건강에 도움을 주며, 단백질과 불포화지방산이 풍부해 활력 있는 하루를 지원합니다. 자연 그대로의 영양소가 조화롭게 어우러져 맛과 건강을 동시에 즐길 수 있는 최상의 간식입니다.</p>
+                                    <a href="#n"><span class="blind">more</span></a>
+                                </div>
+                                <div class="photo_list">
+                                    <ul>
+                                        <li><img src="images/main/product/product_item03_list01.jpg" alt="아몬드 스프레드 상세이미지01"></li>
+                                        <li><img src="images/main/product/product_item03_list02.jpg" alt="아몬드 스프레드 상세이미지02"></li>
+                                        <li><img src="images/main/product/product_item03_list03.jpg" alt="아몬드 스프레드 상세이미지03"></li>
+                                    </ul>
+                                </div> <!--photo_list-->
+                            </div> <!--group-->
+                        </div>
+                        <div class="tab_item item4">
+                            <h3 class="blind">캐슈넛 버터</h3>
+                            <div class="photo"><img src="images/main/product/product_item04.jpg" alt="캐슈넛 버터 대표이미지"></div>
+                            <div class="group">
+                                <div class="txt">
+                                    <strong>Cashew Butter</strong>
+                                    <h4>캐슈넛 버터</h4>
+                                    <p>부드럽고 은은한 단맛이 매력적인 캐슈넛은 불포화지방산과 단백질, 미네랄이 풍부한 고급 견과류입니다. 심혈관 건강을 돕고 피로 회복, 면역력 강화에 효과적이며 피부 탄력 유지에도 좋습니다. 식이섬유가 풍부해 포만감을 오래 유지시켜 다이어트 간식으로도 적합합니다. 맛과 영양을 모두 갖춘 하루 에너지원으로 건강한 균형을 채워줍니다.</p>
+                                    <a href="#n"><span class="blind">more</span></a>
+                                </div>
+                                <div class="photo_list">
+                                    <ul>
+                                        <li><img src="images/main/product/product_item04_list01.jpg" alt="캐슈넛 버터 상세이미지01"></li>
+                                        <li><img src="images/main/product/product_item04_list02.jpg" alt="캐슈넛 버터 상세이미지02"></li>
+                                        <li><img src="images/main/product/product_item04_list03.jpg" alt="캐슈넛 버터 상세이미지03"></li>
+                                    </ul>
+                                </div>
+                            </div> <!--group-->
+                        </div>
+                    </div> <!--tab_content-->
+                </div> <!--wrapper-->
+            </section> <!--product-->
+            <section class="Recipe">
+                <div class="tit">
+                    <h2><span>O</span>ur Kitchen</h2>
+                    <p>특별한 원물을 활용하는 레시피와 팁</p>
+                </div>
+                <div class="list">
+                    <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                        <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                            <li class="swiper-slide">
+                                <div class="photo"><img src="images/main/Recipe/Recipe01.jpg" alt=""></div>
+                                <a href="#n" class="txt">
+                                    <strong>by 갱스홈쿡</strong>
+                                    <h3>네이버블로거_갱스홈쿡 : 땅콩버터 바나나 토스트</h3>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="photo"><img src="images/main/Recipe/Recipe02.jpg" alt=""></div>
+                                <a href="#n" class="txt">
+                                    <strong>by 철든철부지</strong>
+                                    <h3>네이버블로거_철든철부지 :피스타치오 버터 토스트</h3>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="photo"><img src="images/main/Recipe/Recipe03.jpg" alt=""></div>
+                                <a href="#n" class="txt">
+                                    <strong>by 핑쿠</strong>
+                                    <h3>네이버블로거_핑쿠 : 아몬드 스프레드 사과 조합</h3>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="photo"><img src="images/main/Recipe/Recipe04.jpg" alt=""></div>
+                                <a href="#n" class="txt">
+                                    <strong>by 그리팅 Greating</strong>
+                                    <h3>네이버블로거_그리팅 : 캐슈넛 버터 크림 파스타</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="prev">
+                        <span class="blind">이전팝업보기</span>
+                    </button>
+                    <button class="next">
+                        <span class="blind">다음팝업보기</span>
+                    </button>
+                    <div class="ctrl_btn">
+                        <button class="mo_prev">
+                            <span class="blind">이전팝업보기</span>
+                        </button>
+                        <button class="mo_next">
+                            <span class="blind">다음팝업보기</span>
+                        </button>
+                    </div>
+                </div>
+            </section> <!--Recipe-->
+            <section class="news">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2><span>T</span>he Journal</h2>
+                        <p>브랜드의 새로운 소식과 이야기</p>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li class="active" data-img="images/main/news/new01.jpg">
+                                <a href="#n" class="txt">
+                                    <h3>2025 로컬크리에이터 육성사업, 일품미가 선정 소식</h3>
+                                    <span>2025.10.02</span>
+                                </a>
+                            </li>
+                            <li data-img="images/main/news/new02.jpg">
+                                <a href="#n" class="txt">
+                                    <h3>일품미가 넛버터 3종, 압구정 갤러리아 명품관 입점</h3>
+                                    <span>2025.03.04</span>
+                                </a>
+                            </li>
+                            <li data-img="images/main/news/new03.jpg">
+                                <a href="#n" class="txt">
+                                    <h3>땅콩버터 머신 제조사 GELGOOG와의 현장 미팅</h3>
+                                    <span>2024.08.06</span>
+                                </a>
+                            </li>
+                            <li data-img="images/main/news/new04.jpg">
+                                <a href="#n" class="txt">
+                                    <h3>오크베리 X 썸앤썸, 슈퍼푸드 아사이볼 콜라보</h3>
+                                    <span>2024.08.01</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!--list-->
+                    <div class="preview"><span></span></div>
+                </div> <!--wrapper-->
+                <div class="more"><a href="#n"><span>더보기</span></a></div>
+            </section> <!--news-->
+            <section class="review">
+                <div class="tit">
+                    <h2><span>T</span>estimonials</h2>
+                    <p>고객님들이 직접 들려주는 진솔한 후기</p>
+                </div>
+                <div class="swiper"> 
+                    <ul class="swiper-wrapper"> 
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/review/review01.jpg" alt=""></div>
+                            <div class="txt">
+                                <div class="stars">
+                                    <span class="blind">별 점수</span>
+                                </div>
+                                <h3>은은한 단맛과 깊은 고소함</h3>
+                                <p>고소한 피스타치오 향이 확 퍼지고, 꾸덕하지만 부드럽게 발립니다. 단맛이 과하지 않아 풍미가 깔끔하며, 빵이나 요거트와 특히 잘 어울립니다.</p>
+                                <div class="info">
+                                    <span class="name">구매자 : 이**</span>
+                                    <span class="data">2025.11.11</span>
+                                </div><!--info-->
+                                <div class="purchase">
+                                    구매 제품 : 
+                                    <a href="#n"><span> 미국산 피스타치오 버터 550g</span></a>
+                                </div> <!--purchase-->
+                            </div> <!--txt-->
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/review/review02.jpg" alt=""></div>
+                            <div class="txt">
+                                <div class="stars">
+                                    <span class="blind">별 점수</span>
+                                </div>
+                                <h3>고소함 그대로</h3>
+                                <p>부드럽고 크리미한 질감에 자연스러운 단맛이 조화롭습니다. 기름지지 않아 부담 없고, 빵·스무디·소스로 다양하게 활용하기 좋습니다.</p>
+                                <div class="info">
+                                    <span class="name">구매자 : 박**</span>
+                                    <span class="data">2025.11.10</span>
+                                </div><!--info-->
+                                <div class="purchase">
+                                    구매 제품 : 
+                                    <a href="#n"><span>국산 100% 땅콩 버터 1kg</span></a>
+                                </div> <!--purchase-->
+                            </div> <!--txt-->
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/review/review03.jpg" alt=""></div>
+                            <div class="txt">
+                                <div class="stars">
+                                    <span class="blind">별 점수</span>
+                                </div>
+                                <h3>담백한 아몬드 풍미</h3>
+                                <p>은은한 고소함과 깔끔한 단맛이 특징입니다. 단단해 보이지만 부드럽게 퍼지고, 오트밀·샌드위치 등 어디에나 잘 어울립니다.</p>
+                                <div class="info">
+                                    <span class="name">구매자 : 김**</span>
+                                    <span class="data">2025.11.09</span>
+                                </div><!--info-->
+                                <div class="purchase">
+                                    구매 제품 : 
+                                    <a href="#n"><span>미국산 100% 아몬드 버터 550g</span></a>
+                                </div> <!--purchase-->
+                            </div> <!--txt-->
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/review/review04.jpg" alt=""></div>
+                            <div class="txt">
+                                <div class="stars">
+                                    <span class="blind">별 점수</span>
+                                </div>
+                                <h3>달콤하고 크리미한 디저트 느낌</h3>
+                                <p>아몬드 버터보다 더 부드럽고 달콤해 토스트에 바르면 윤기가 돕니다. 간식이나 디저트용으로 잘 맞고 커피와도 궁합이 좋습니다.</p>
+                                <div class="info">
+                                    <span class="name">구매자 : 최**</span>
+                                    <span class="data">2025.11.08</span>
+                                </div><!--info-->
+                                <div class="purchase">
+                                    구매 제품 : 
+                                    <a href="#n"><span>국산 100% 아몬드 스프레드 550g</span></a>
+                                </div> <!--purchase-->
+                            </div> <!--txt-->
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/review/review05.jpg" alt=""></div>
+                            <div class="txt">
+                                <div class="stars">
+                                    <span class="blind">별 점수</span>
+                                </div>
+                                <h3>부드러움의 정석</h3>
+                                <p>캐슈넛 특유의 크리미함이 돋보이며 고소함과 단맛의 균형이 좋습니다. 디저트나 소스에 활용하기 좋고 누구나 부담 없이 즐길 수 있습니다.</p>
+                                <div class="info">
+                                    <span class="name">구매자 : 함**</span>
+                                    <span class="data">2025.11.08</span>
+                                </div><!--info-->
+                                <div class="purchase">
+                                    구매 제품 : 
+                                    <a href="#n"><span>미국산 100% 캐슈넛 버터 550g</span></a>
+                                </div> <!--purchase-->
+                            </div> <!--txt-->
+                        </li>
+                    </ul>
+                    <button class="prev"><span class="blind">이전팝업보기</span></button>
+                    <button class="next"><span class="blind">다음팝업보기</span></button>
+                </div>
+                <div class="paging"></div>
+                <div class="more"><a href="#n"><span>더보기</span></a></div>
+            </section> <!--review-->
+        </div> <!--container-->
+        <footer>
+            <div class="f_head">
+                <div class="wrapper">
+                    <div class="customer">
+                        <div class="info">
+                            <strong>Customr Center</strong>
+                            <h3>070-4252-7080</h3>
+                            <span>평일 : 10:00 ~ 17:00 <br class="mo_only">  점심 : 12:00~13:00 <br>
+                                  휴무 : 토 / 일 / 공휴일</span>
+                            <p>평일 5시 이후 주말 / 공휴일에는 1:1 문의 게시판을 이용바랍니다.</p>
+                        </div> <!--info-->
+                        <div class="quick_menu">
+                                <ul>
+                                    <li>
+                                        <a href="#n"><span>1:1 문의</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#n"><span>배송조회</span></a>
+                                    </li>
+                                </ul>
+                        </div> <!--quick_menu-->
+                    </div> <!--customer-->
+                    <div class="bank_info">
+                        <strong>Bank Info</strong>
+                        <div class="inner">
+                            <ul>
+                                <li>
+                                    <h4>예금주</h4>
+                                    <p>김정호</p>
+                                </li>
+                                <li>
+                                    <h4>농협</h4>
+                                    <p>351-1338-0927-33</p>
+                                </li>
+                            </ul>
+                            <div class="bank_img"><img src="images/main/footer/bank_img.svg" alt=""></div>
+                        </div>
+                    </div> <!--bank_info-->
+                </div> <!--wrapper-->
+            </div> <!--f_head-->
+            <div class="f_sub">
+                <div class="wrapper">
+                    <div class="f_logo"><img src="images/common/logo_w.svg" alt="ilpummiga"></div>
+                    <div class="inner">
+                        <div class="sns">
+                            <ul>
+                                <li class="book"><a href="#n"><span class="blind">블로그</span></a></li>
+                                <li class="talk"><a href="#n"><span class="blind">카카오톡</span></a></li>
+                                <li class="insta"><a href="#n"><span class="blind">인스타그램</span></a></li>
+                            </ul>
+                        </div><!--sns-->
+                        <div class="f_nav">
+                            <ul>
+                                <li><a href="#n">회사소개</a></li>
+                                <li><a href="#n">이용약관</a></li>
+                                <li><a href="#n"><span>개인정보처리방침</span></a></li>
+                                <li><a href="#n">이용안내</a></li>
+                                <li><a href="#n">고객센터</a></li>
+                            </ul>
+                        </div> <!--f_nav-->
+                    </div> <!--inner-->
+                    <div class="f_info">
+                        <span>상호명 : 일품미가</span> <span>대표자(성명) : 김정호</span> <br>
+                        <span>사업자 등록번호 안내 : 202-04-04518</span> <span>통신판매업 신고 : 제 2015-충북청주-0968호</span> <br>
+                        <address>주소 : 27870 충청북도 진천군 문백면 계산3길 142 1동</address>
+                        <span>전화 : 070-4252-7080</span> <span>팩스 : 043-285-7080</span> <br>
+                        <span>이메일 : some7080@naver.com</span> <span>개인정보보호책임자 : 김정호 (some7080@naver.com)</span>
+                    </div> <!--f_info-->
+                    <div class="copyright">   
+                        <p>Copyright © 일품미가. All rights reserved.</p>                         
+                    </div> <!--copyright-->
+                </div> <!--wrapper-->
+            </div> <!--f_sub-->
+        </footer>
+        <div class="top"><button><span class="blind">TOP</span></button></div>
+    </div>
+</body>
+</html>

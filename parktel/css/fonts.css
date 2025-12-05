@@ -1,0 +1,11 @@
+/* 서체 */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap');
+
+@font-face {
+	font-family: "Pretendard";
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: url("../fonts/PretendardVariable.woff2") format("woff2-variations");
+}
+

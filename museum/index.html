@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 라이브러리 파일 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/aos.js"></script>
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- 개인파일 -->
+    <link rel="stylesheet" href="css/main.css?v=20251203">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>충북대학교박물관</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="head_top">
+                <h1 class="logo"><a href="index.html"><span class="blind">충북대학교박물관 CHUNGBUK NATIONAL UNIVERSITY MUSEUM</span></a></h1>
+                <button class="menu_open"><span class="blind">전체메뉴열기</span></button>
+                <button class="menu_close"><span class="blind">전체메뉴닫기</span></button>
+            </div> <!--head_top-->
+            <nav class="full_menu">
+                <div class="menu_list">
+                    <ul class="depth1">
+                        <li>
+                            <a href="#n">박물관 소개</a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>박물관 소개</span></a></li>
+                                <li>
+                                    <a href="#n"><span>박물관연혁</span></a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>연혁</span></a></li>
+                                        <li><a href="#n"><span>역대관장</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#n"><span>조직 및 업무</span></a></li>
+                                <li><a href="#n"><span>관람안내</span></a></li>   
+                                <li><a href="#n"><span>기증안내</span></a></li>
+                                <li><a href="#n"><span>찾아오시는 길</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n">전시안내</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#n"><span>상시전시</span></a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>제1전시실</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#n"><span>특별전시</span></a></li>
+                                <li><a href="#n"><span>야외전시</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n">학술활동</a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>학술조사</span></a></li>
+                                <li><a href="#n"><span>간행물</span></a></li>
+                                <li><a href="#n"><span>학술대회</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n">소장유물</a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>소장유물</span></a></li>
+                                <li>
+                                    <a href="#n"><span>유물열람</span></a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>유물열람안내</span></a></li>
+                                        <li><a href="#n"><span>유물열람신청</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#n"><span>유물복제</span></a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>유물복제안내</span></a></li>
+                                        <li><a href="#n"><span>유물복제신청</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n">교육활동</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#n"><span>박물관 대학</span></a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>교육안내</span></a></li>
+                                        <li><a href="#n"><span>강좌</span></a></li>
+                                        <li><a href="#n"><span>답사</span></a></li>
+                                        <li><a href="#n"><span>수강신청</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#n"><span>박물관 강좌</span></a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>교양강좌</span></a></li>
+                                        <li><a href="#n"><span>특별강좌</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#n"><span>초중고 체험프로그램</span></a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>CBNU 희희락락 박물관학교</span></a></li>
+                                        <li><a href="#n"><span>CBNU GO!GO! 고고학!</span></a></li>
+                                        <li><a href="#n"><span>CBNU HIGH 큐레이터</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#n"><span>구석기시대 퀴즈여행</span></a></li>   
+                                <li><a href="#n"><span>개신가족역사기행</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n">충북대 역사관</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#n"><span>충북대 역사관</span></a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>역사관 소개</span></a></li>
+                                        <li><a href="#n"><span>역사관 구성</span></a></li>
+                                        <li><a href="#n"><span>관람안내</span></a></li>
+                                        <li><a href="#n"><span>대관 신청</span></a></li>
+                                        <li><a href="#n"><span>찾아오시는길</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#n"><span>학교사자료 소개</span></a></li>
+                                <li><a href="#n"><span>자료수집 안내</span></a></li>
+                                <li><a href="#n"><span>기증하신 분들</span></a></li>   
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n">열린마당</a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>공지사항</span></a></li>
+                                <li><a href="#n"><span>포토갤러리</span></a></li>
+                                <li><a href="#n"><span>문의하기</span></a></li>
+                                <li><a href="#n"><span>충북대학교 박물관회</span></a></li>   
+                                <li><a href="#n"><span>개인정보처리방침</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav> <!--full_menu-->
+        </header>
+        <main class="container">
+            <section class="visual">
+                <h2 class="blind">팝업</h2>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual/visual_bg01.jpg" alt="충북대학교박물관 외관 사진"></div>
+                            <div class="txt">
+                                <h3>역사를 <br class="mo_only"> 만나는 문턱에서</h3>
+                                <p>과거와 현재가 이어지는 공간으로 당신을 초대합니다.</p>
+                            </div> <!--txt-->
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual/visual_bg02.jpg" alt="내부 유물 전시 사진01"></div>
+                            <div class="txt">
+                                <h3>한 점의 유물이 <br class="mo_only"> 전하는 깊은 순간</h3>
+                                <p>눈앞에서 마주하는 진짜 역사, 그 감동을 함께합니다.</p>
+                            </div> <!--txt-->
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual/visual_bg03.jpg" alt="내부 유물 전시 사진02"></div>
+                            <div class="txt">
+                                <h3>유산이 살아 <br class="mo_only"> 숨 쉬는 전시의 중심</h3>
+                                <p>세대를 넘어 이어진 가치들을 한 공간에 담았습니다.</p>
+                            </div> <!--txt-->
+                        </li>
+                    </ul>
+                </div> <!--swiper-->
+                <div class="paging">
+                    <ul>
+                        <!-- <li><span>문구</span></li> -->
+                    </ul>
+                </div> <!--paging-->
+                <div class="spin">
+                    <img src="images/main/visual/spin_scroll_down.svg" alt="" class="spin_txt">
+                    <img src="images/main/visual/spin_arrow.svg" alt="" class="center_txt">
+                </div>
+            </section> <!--visual-->
+            <section class="guide">
+                <div class="wrapper">
+                    <h2>관람시간 안내</h2>
+                    <div class="info_wrap">
+                        <div class="time">
+                            <div class="time_icon">
+                                <h3>관람시간</h3>
+                            </div>
+                            <ul>
+                                <li>
+                                    <strong>관람일</strong>
+                                    <span>월 ~ 금 09:30~17:30
+                                        <em>(토요일은 예약자에 한해 관람가능)</em>
+                                    </span>
+                                    
+                                </li>
+                                <li>
+                                    <strong>휴관일</strong>
+                                    <span class="holiday">주말, 공휴일 및 학교에서 정하는 휴관일</span>
+                                </li>
+                            </ul>
+                        </div> <!--time-->
+                        <div class="money">
+                            <div class="money_icon">
+                                <h3>관람료</h3>
+                            </div>
+                            <ul>
+                                    <li>
+                                        <strong>금액</strong>
+                                        <span>무료</span>
+                                    </li>
+                                </ul>
+                        </div> <!--money-->
+                        <div class="info_btn">
+                            <button class="btn01"><span>관람안내</span></button>
+                            <button class="btn02"><span>오시는 길</span></button>
+                        </div>
+                    </div> <!--info_wrap-->
+                </div> <!--wrapper-->
+            </section> <!--guide-->
+            <section class="special">
+                <div class="wrapper">
+                    <div class="tit" data-aos="fade-up">
+                        <h2>특별 기획전</h2>
+                        <a href="#n"><span class="blind">more</span></a>
+                    </div> <!--tit-->
+                    <div class="list" data-aos="fade-up"  data-aos-delay="500">
+                        <div class="swiper"> 
+                            <ul class="swiper-wrapper"> 
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/special/special01.jpg" alt="충북 도자 , 근대와 현대를 잇다"></div>
+                                        <div class="txt">
+                                            <strong class="ing">현재전시</strong>
+                                            <h3>충북 도자 , 근대와 현대를 잇다</h3>
+                                            <span>2025-11-25 ~ 2026-02-22</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/special/special02.jpg" alt="우리 지역, 우리 대학박물관, 함께 30년"></div>
+                                        <div class="txt">
+                                            <strong>지난전시</strong>
+                                            <h3>우리 지역, 우리 대학박물관, 함께 30년</h3>
+                                            <span>2025-05-29 ~ 2025-08-31</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/special/special03.jpg" alt="버들이 드리운 마을, 垂楊介"></div>
+                                        <div class="txt">
+                                            <strong>지난전시</strong>
+                                            <h3>버들이 드리운 마을, 垂楊介</h3>
+                                            <span>2024-10-23 ~ 2025-02-28</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/special/special04.jpg" alt="어석천추語石千秋-중국석각탁본전"></div>
+                                        <div class="txt">
+                                            <strong>지난전시</strong>
+                                            <h3>어석천추語石千秋-중국석각탁본전</h3>
+                                            <span>2023-11-22 ~ 2023-12-31</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/special/special05.jpg" alt="뭍으로 온 제주"></div>
+                                        <div class="txt">
+                                            <strong>지난전시</strong>
+                                            <h3>뭍으로 온 제주</h3>
+                                            <span>2023-10-16 ~ 2024-01-26</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/special/special06.jpg" alt="아름다운 우리 한글"></div>
+                                        <div class="txt">
+                                            <strong>지난전시</strong>
+                                            <h3>아름다운 우리 한글</h3>
+                                            <span>2022-08-16 ~ 2022-08-31</span>
+                                        </div>
+                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div> <!--list-->
+                    <div class="ctrl_wrap">
+                        <div class="scrollbar"></div> <!--swiper-scrollbar-->
+                        <div class="ctrl_btn">
+                            <button class="ctrl_prev"><span class="blind">이전팝업보기</span></button>
+                            <button class="ctrl_stop"><span class="blind">일시정지</span></button>
+                            <button class="ctrl_play"><span class="blind">실행</span></button>
+                            <button class="ctrl_next"><span class="blind">다음팝업보기</span></button>
+                        </div> <!--inner-->
+                    </div>
+                </div> <!--wrapper-->
+            </section> <!--special-->
+            <section class="exhibition item1">
+                <div class="wrapper">
+                    <div class="tit" data-aos="fade-up"  data-aos-delay="500">
+                        <h2>전시안내</h2>
+                        <a href="#n"><span class="blind">more</span></a>
+                    </div> <!--tit-->
+                    <div class="tab_list" data-aos="fade-up"  data-aos-delay="700">
+                        <ul>
+                            <li class="item1 active" data-tab="item1"><button>상설전시<span class="blind">선택됨</span></button></li>
+                            <li class="item2" data-tab="item2"><button>야외전시<span class="blind"></span></button></li>
+                        </ul>
+                    </div><!--tab_list-->
+                    <div class="tab_content" data-aos="fade-up"  data-aos-delay="1000">
+                        <div class="tab_item item1 active" title="선택됨">
+                            <h3 class="blind">상설전시</h3>
+                            <div class="photo"><img src="images/main/exhibition/exhibition01.jpg" alt="상설전시 사진"></div>
+                            <div class="txt">
+                                <h4>상설전시 - 제 1전시실</h4>
+                                <p>우리 박물관은 청원 두루봉동굴유적, 단양 수양개유적, 청원 소로리유적 등에서 조사된 석기·동물화석·뼈연모·볍씨·인류화석 등 약 1,200여 점의 유물을 전시하여 구석기문화를 한눈에 이해할 수 있도록 구성되어 있다. 또한 이 구석기문화 전시실은 국내에서 가장 큰 규모와 다양한 전시 내용을 갖추고 있어, 전문성과 독창성을 지닌 전시공간으로 평가받고 있다.</p>
+                                <a href="#n"><span>자세히 보기</span></a>
+                            </div> <!--txt-->
+                        </div> <!--tab_item-->
+                        <div class="tab_item item2">
+                            <h3 class="blind">야외전시</h3>
+                            <div class="photo"><img src="images/main/exhibition/exhibition02.jpg" alt="야외전시 사진"></div>
+                            <div class="txt">
+                                <h4>야외전시</h4>
+                                <p>충북대학교박물관 야외전시장은 약 3,000평 규모로 조성된 열린 전시 공간으로, 자연 속에서 다양한 석조 유물을 가까이에서 관람할 수 있다. 제천 황석리 선돌과 방흥리·우산리 고인돌, 통일신라 석물, 고려 3층 석탁, 조선 5층 석탑 등 시대별 석조 유물 60여 점이 전시되어 있으며, 자연광 속에서 유물의 조형미를 생생하게 느낄 수 있는 교육·문화 체험 공간으로 사랑받고 있다.</p>
+                                <a href="#n"><span>자세히 보기</span></a>
+                            </div> <!--txt-->
+                        </div> <!--tab_item-->
+                    </div> <!--tab_content-->
+                </div> <!--wrapper-->
+            </section> <!--exhibition-->
+            <section class="collection">
+                <div class="wrapper">
+                    <div class="tit" data-aos="fade-up">
+                        <h2>소장품</h2>
+                        <a href="#n"><span class="blind">more</span></a>
+                    </div> <!--tit-->
+                    <div class="list" data-aos="fade-up"  data-aos-delay="500">
+                        <div class="swiper"> 
+                            <ul class="swiper-wrapper"> 
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/collection/collection01.jpg" alt="순천김씨 간찰 사진"></div>
+                                        <div class="txt">
+                                            <h3>순천김씨 간찰</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>소장유물</strong>
+                                                    <span>조선시대</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/collection/collection02.jpg" alt="물고기모양 예술품 사진"></div>
+                                        <div class="txt">
+                                            <h3>물고기모양 예술품</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>매장문화재</strong>
+                                                    <span>구석기시대</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/collection/collection03.jpg" alt="흥수아이 1호 사진"></div>
+                                        <div class="txt">
+                                            <h3>흥수아이 1호</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>매장문화재</strong>
+                                                    <span>선사시대</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/collection/collection04.jpg" alt="슴베찌르개 사진"></div>
+                                        <div class="txt">
+                                            <h3>슴베찌르개</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>매장문화재</strong>
+                                                    <span>구석기시대</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/collection/collection05.jpg" alt="들소머리 예술품 사진"></div>
+                                        <div class="txt">
+                                            <h3>들소머리 예술품</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>매장문화재</strong>
+                                                    <span>구석기시대</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/collection/collection06.jpg" alt="얼굴모양 예술품 사진"></div>
+                                        <div class="txt">
+                                            <h3>얼굴모양 예술품</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>매장문화재</strong>
+                                                    <span>구석기시대</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/collection/collection07.jpg" alt="쌍코뿔이 사진"></div>
+                                        <div class="txt">
+                                            <h3>쌍코뿔이</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>매장문화재</strong>
+                                                    <span>구석기시대</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/collection/collection08.jpg" alt="동굴곰 사진"></div>
+                                        <div class="txt">
+                                            <h3>동굴곰</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>매장문화재</strong>
+                                                    <span>구석기시대</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> <!--list-->
+                    <div class="ctrl_btn" data-aos="fade-up">
+                        <button class="ctrl_prev"><span class="blind">이전팝업보기</span></button>
+                        <button class="ctrl_stop"><span class="blind">일시정지</span></button>
+                        <button class="ctrl_play"><span class="blind">실행</span></button>
+                        <button class="ctrl_next"><span class="blind">다음팝업보기</span></button>
+                    </div>  
+                </div> <!--wrapper-->
+            </section> <!--collection-->
+            <section class="publication">
+                <div class="wrapper">
+                    <div class="tit" data-aos="fade-up">
+                        <h2>간행물</h2>
+                        <a href="#n"><span class="blind">more</span></a>
+                    </div> <!--tit-->
+                    <div class="list" data-aos="fade-up" data-aos-delay="500">
+                        <div class="swiper"> 
+                            <ul class="swiper-wrapper"> 
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/publication/publication01.jpg" alt="청주지역 금석문의 역사 연구 및 문화 가치 표지사진"></div>
+                                        <div class="txt">
+                                            <h3>청주지역 금석문의 역사 연구 및 문화 가치</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>기타</strong>
+                                                    <span>충북대학교박물관</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/publication/publication02.jpg" alt="정북동토성 발굴조사 마스터플랜 수립 용역 보고서 표지사진"></div>
+                                        <div class="txt">
+                                            <h3>정북동토성 발굴조사 마스터플랜 수립 용역 보고서</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>기타</strong>
+                                                    <span>충북대학교박물관</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/publication/publication03.jpg" alt="금석문 일제조사(상당구) 표지사진"></div>
+                                        <div class="txt">
+                                            <h3>금석문 일제조사(상당구)</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>기타</strong>
+                                                    <span>충북대학교박물관</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/publication/publication04.jpg" alt="연성지의 역사적 가치 조명 표지사진"></div>
+                                        <div class="txt">
+                                            <h3>연성지의 역사적 가치 조명</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>기타</strong>
+                                                    <span>충북대학교박물관</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/publication/publication05.jpg" alt="연천 통현리 고구려 석실분 표지사진"></div>
+                                        <div class="txt">
+                                            <h3>연천 통현리 고구려 석실분</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>학술총서</strong>
+                                                    <span>충북대학교박물관</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/publication/publication06.jpg" alt="청주 정북동토성Ⅵ -성내 및 해자 시⋅발굴조사- 표지사진"></div>
+                                        <div class="txt">
+                                            <h3>청주 정북동토성Ⅵ -성내 및 해자 시⋅발굴조사-</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>학술총서</strong>
+                                                    <span>충북대학교박물관</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/publication/publication07.jpg" alt="제천 월광사지 원랑선사탑비 정밀 판독 및 역주 학술용역 표지사진"></div>
+                                        <div class="txt">
+                                            <h3>제천 월광사지 원랑선사탑비 정밀 판독 및 역주 학술용역</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>기타</strong>
+                                                    <span>충북대학교박물관</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/publication/publication08.jpg" alt="대청댐 수몰지구 조사총람 발간(옥천) 표지사진"></div>
+                                        <div class="txt">
+                                            <h3>대청댐 수몰지구 조사총람 발간(옥천)</h3>
+                                            <ul>
+                                                <li>
+                                                    <strong>기타</strong>
+                                                    <span>충북대학교박물관</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> <!--list-->
+                    <div class="ctrl_btn" data-aos="fade-up">
+                        <button class="ctrl_prev"><span class="blind">이전팝업보기</span></button>
+                        <button class="ctrl_stop"><span class="blind">일시정지</span></button>
+                        <button class="ctrl_play"><span class="blind">실행</span></button>
+                        <button class="ctrl_next"><span class="blind">다음팝업보기</span></button>
+                    </div>
+                </div> <!--wrapper-->
+            </section> <!--publication-->
+            <section class="group01">
+                <h2 class="blind">그룹 탭01</h2>
+                <div class="wrapper">
+                    <div class="education">
+                        <h3>교육</h3>
+                        <div class="swiper"> 
+                            <ul class="swiper-wrapper"> 
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/group01/education01.jpg" alt="박물관 교육체험학습(초등학생) 사진"></div>
+                                        <h4>CBNU 희희락락 박물관학교</h4>
+                                        <p>초등학생을 위한 박물관 교육체험 프로그램입니다.</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/group01/education02.jpg" alt="박물관 교육체험학습(중학생) 사진"></div>
+                                        <h4>CBNU GO!GO! 고고학!</h4>
+                                        <p>자유학기제를 위한 진로체험을 포함한 중학생을 위한 프로그램입니다.</p>
+                                    </a>
+                                </li> 
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/group01/education03.jpg" alt="박물관 교육체험학습(고등학생) 사진"></div>
+                                        <h4>CBNU HIGH 큐레이터</h4>
+                                        <p>고등학생을 위한 박물관 교육체험 프로그램입니다.</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pagination">
+                            <button class="ctrl_prev"><span class="blind">이전팝업보기</span></button>
+                            <div class="paging">
+                                <div class="current">현재팝업번호</div>
+                                /
+                                <div class="total">전체팝업번호</div>
+                            </div> <!--paging-->
+                            <button class="ctrl_next"><span class="blind">다음팝업보기</span></button>
+                        </div> <!--pagination-->
+                    </div> <!--education-->
+                    <div class="popup">
+                        <h3>안내</h3>
+                        <div class="swiper"> 
+                            <ul class="swiper-wrapper"> 
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/group01/popup01.jpg" alt="박물관대학 안내 사진"></div>
+                                        <div class="txt">
+                                            <h4>박물관대학 안내</h4>
+                                            <p>지역민과의 소통을 위해 1995년부터 운영된 전문 교양강좌, 충북대학교 박물관대학입니다.</p>
+                                            <span>자세히보기</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/group01/popup02.jpg" alt="유물 열람 안내 사진"></div>
+                                        <div class="txt">
+                                            <h4>유물 열람 안내</h4>
+                                            <p>유물 열람은 열람허가신청서와 관련 서류를 제출해 승인받은 후 진행되며, 열람 후에는 결과서를 제출해야 합니다.</p>
+                                            <span>자세히보기</span>
+                                        </div>
+                                    </a>
+                                </li> 
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/group01/popup03.jpg" alt="유물 복제 안내 사진"></div>
+                                        <div class="txt">
+                                            <h4>유물 복제 안내</h4>
+                                            <p>유물 복제는 촬영·탁본·모사 등을 허가받아 진행하는 절차로, 신청서는 7일 전 제출해야 합니다.</p>
+                                            <span>자세히보기</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pagination">
+                            <button class="ctrl_prev"><span class="blind">이전팝업보기</span></button>
+                            <div class="paging">
+                                <div class="current">현재팝업번호</div>
+                                /
+                                <div class="total">전체팝업번호</div>
+                            </div> <!--paging-->
+                            <button class="ctrl_next"><span class="blind">다음팝업보기</span></button>
+                        </div> <!--pagination-->
+                    </div> <!--popup-->
+                </div> <!--wrapper-->
+            </section> <!--group01-->
+            <section class="group02">
+                <div class="wrapper">
+                    <h2 class="blind">그룹 탭02</h2>
+                    <div class="news" data-aos="fade-right" data-aos-delay="500">
+                        <div class="tit">
+                            <h3>박물관 소식</h3>
+                            <a href="#n"><span class="blind">more</span></a>
+                        </div> <!--tit-->
+                        <div class="tab_list">
+                            <ul>
+                                <li class="item1 active" data-tab="item1"><button>전체<span class="blind">선택됨</span></button></li>
+                                <li class="item2" data-tab="item2"><button>공지사항<span class="blind"></span></button></li>
+                                <li class="item3" data-tab="item3"><button>채용안내<span class="blind"></span></button></li>
+                                <li class="item4" data-tab="item4"><button>서포터즈<span class="blind"></span></button></li>
+                            </ul>
+                        </div><!--tab_list-->
+                        <div class="tab_content">
+                            <div class="tab_item item1 active" title="선택됨">
+                                <ul>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>2025학년도 2학기 CBNU-MUSE(서포터즈) 12기 선발 결과</span></h4>
+                                            <span>2025-08-29</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>[석학 초청 특강] 한국적 판타지 대작은 가능한가? - 사라진 신들의 귀환</span></h4>
+                                            <span>2025-05-01</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>2025년 매장유산 미정리 유물 보존 및 활용사업 보조원 추가 채용 공고</span></h4>
+                                            <span>2025-03-10</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>2025학년도 1학기 CBNU-MUSE(서포터즈) 11기 선발 결과</span></h4>
+                                            <span>2025-02-27</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>제11기 박물관 서포터즈 CBNU MUSE 모집 공고</span></h4>
+                                            <span>2025-02-10</span>
+                                        </a>
+                                    </li>
+                                </ul>                                
+                            </div> <!--tab_item-->
+                            <div class="tab_item item2">
+                                <ul>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>2025학년도 2학기 CBNU-MUSE(서포터즈) 12기 선발 결과</span></h4>
+                                            <span>2025-08-29</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>[석학 초청 특강] 한국적 판타지 대작은 가능한가? - 사라진 신들의 귀환</span></h4>
+                                            <span>2025-05-01</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>제11기 박물관 서포터즈 CBNU MUSE 모집 공고</span></h4>
+                                            <span>2025-02-10</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>제4회 CBNU 학술포럼 &lt;중부지역 원삼국 문화와 단양 수양개 유적&gt; 개최</span></h4>
+                                            <span>2024-12-17</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>[VR]전시실 관람</span></h4>
+                                            <span>2021-10-18</span>
+                                        </a>
+                                    </li>
+                                </ul>                                
+                            </div> <!--tab_item-->
+                            <div class="tab_item item3">
+                                <ul>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>2025년 매장유산 미정리 유물 보존 및 활용사업 보조원 추가 채용 공고</span></h4>
+                                            <span>2025-03-10</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>2025년 매장유산 미정리 유물 보존 및 활용사업 보조원 채용 공고</span></h4>
+                                            <span>2025-01-16</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>2023년도 매장문화재 미정리 유물 정리 및 활용사업 보조원 모집(3차) 합격자 공고</span></h4>
+                                            <span>2023-09-27</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>2023년 매장문화재 미정리 유물 보존 및 활용사업 보조원 채용 공고(3차)</span></h4>
+                                            <span>2023-09-12</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>2023년도 매장문화재 미정리 유물 정리 및 활용사업 시간제보조원 추가 모집 합격자 공고</span></h4>
+                                            <span>2023-07-21</span>
+                                        </a>
+                                    </li>
+                                </ul>                                
+                            </div> <!--tab_item-->
+                            <div class="tab_item item4">
+                                <ul>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>2025학년도 1학기 CBNU-MUSE(서포터즈) 11기 선발 결과</span></h4>
+                                            <span>2025-02-27</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>2024학년도 2학기 CBNU-MUSE(서포터즈) 10기 선발 결과</span></h4>
+                                            <span>2024-08-28</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>제10기 박물관 서포터즈 CBNU MUSE 모집 공고</span></h4>
+                                            <span>2024-08-08</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>2024학년도 1학기 CBNU-MUSE(서포터즈) 9기 선발 결과</span></h4>
+                                            <span>2024-03-05</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <h4><span>제9기 박물관 서포터즈 CBNU MUSE 모집 공고</span></h4>
+                                            <span>2024-02-13</span>
+                                        </a>
+                                    </li>
+                                </ul>                                
+                            </div> <!--tab_item-->
+                        </div> <!--tab_content-->
+                    </div> <!--news-->
+                    <div class="album" data-aos="fade-left" data-aos-delay="700">
+                        <div class="tit">
+                            <h3>포토 갤러리</h3>
+                            <a href="#n"><span class="blind">more</span></a>
+                        </div> <!--tit-->
+                        <div class="list">
+                            <div class="swiper"> 
+                                <ul class="swiper-wrapper"> 
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/main/album/album01.png" alt="2025학년도 국립대학육성사업 박물관 역사기행 전주·완주 사진"></div>
+                                            <div class="txt">
+                                                <h4>2025학년도 국립대학육성사업 박물관 역사기행 전주·완주(2025.6.21.)</h4>
+                                                <span>2025-11-06</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/main/album/album02.png" alt="2025학년도 국립대학육성사업 박물관 역사기행 안동 사진"></div>
+                                            <div class="txt">
+                                                <h4>2025학년도 국립대학육성사업 박물관 역사기행 안동(2025.5.17.)</h4>
+                                                <span>2025-11-06</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/main/album/album03.png" alt="2025학년도 국립대학육성사업 박물관 역사기행 경기 광주·음성 사진"></div>
+                                            <div class="txt">
+                                                <h4>2025학년도 국립대학육성사업 박물관 역사기행 경기 광주·음성(2025.4.19.)</h4>
+                                                <span>2025-11-06</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/main/album/album04.png" alt="2024학년도 국립대학육성사업 박물관 역사기행 단양 사진"></div>
+                                            <div class="txt">
+                                                <h4>2024학년도 국립대학육성사업 박물관 역사기행 단양(2024.12.21.)</h4>
+                                                <span>2025-01-06</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/main/album/album05.png" alt="2024학년도 국립대학육성사업 박물관 역사기행 원주 사진"></div>
+                                            <div class="txt">
+                                                <h4>2024학년도 국립대학육성사업 박물관 역사기행 원주(2024.11.16.)</h4>
+                                                <span>2024-11-27</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/main/album/album06.png" alt="2024학년도 2학기 박물관대학 국내답사 전주 사진"></div>
+                                            <div class="txt">
+                                                <h4>2024학년도 2학기 박물관대학 국내답사 전주(2024.11.14.)</h4>
+                                                <span>2024-11-27</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ctrl_btn">
+                            <button class="ctrl_prev"><span class="blind">이전팝업보기</span></button>
+                            <button class="ctrl_stop"><span class="blind">일시정지</span></button>
+                            <button class="ctrl_play"><span class="blind">실행</span></button>
+                            <button class="ctrl_next"><span class="blind">다음팝업보기</span></button>
+                        </div>
+                    </div> <!--album-->
+                </div> <!--wrapper-->
+            </section> <!--group02-->
+            <section class="service">
+                <div class="wrapper">
+                    <div class="tit" data-aos="fade-up" data-aos-delay="500">
+                        <strong>SINCE 1970</strong>
+                        <h2>CHUNGBUK UNIVERSITY <br>
+                            MUSEUM SERVICES</h2>
+                        <p>충북대학교 박물관의 전시, 교육, 소장품, <br class="pc_only">
+                            관람 정보를 종합적으로 안내합니다.</p>
+                    </div> <!--tit-->
+                    <div class="list" data-aos="fade-left" data-aos-delay="700">
+                        <ul>
+                            <li>
+                                <a href="#n"><span>전시안내</span></a>
+                            </li>
+                            <li>
+                                <a href="#n"><span>교육·행사</span></a>
+                            </li>
+                            <li>
+                                <a href="#n"><span>관람안내</span></a>
+                            </li>
+                            <li>
+                                <a href="#n"><span>소장품</span></a>
+                            </li>
+                            <li>
+                                <a href="#n"><span>자료실 <em>(간행물)</em></span></a>
+                            </li>
+                            <li>
+                                <a href="#n"><span>박물관 소식</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                 </div> <!--wrapper-->
+            </section> <!--service-->
+        </main>
+        <footer>
+            <div class="f_top">
+                <ul>
+                    <li>
+                        <a href="#n"><img src="images/common/footer/footer-institution-logos-01.svg" alt="충북대학교박물관 / Chungbuk National University Museum"></a>
+                    </li>
+                    <li>
+                        <a href="#n"><img src="images/common/footer/footer-institution-logos-02.svg" alt="국립중앙박물관 / National Museum of Korea"></a>
+                    </li>
+                    <li>
+                        <a href="#n"><img src="images/common/footer/footer-institution-logos-03.svg" alt="국립청주박물관 / Cheongju National Museum"></a>
+                    </li>
+                    <li>
+                        <a href="#n"><img src="images/common/footer/footer-institution-logos-04.svg" alt="국가유산청 / Cultural Heritage Administration"></a>
+                    </li>
+                    <li>
+                        <a href="#n"><img src="images/common/footer/footer-institution-logos-05.svg" alt="국립문화유산연구원 / National Research Institute of Cultural Heritage"></a>
+                    </li>
+                </ul>
+            </div> <!--f_top-->
+            <div class="f_bottom">
+                <div class="wrapper">
+                    <div class="logo"><img src="images/common/logo/logo_w.svg" alt="충북대학교박물관 / CHUNGBUK NATIONAL UNIVERSITY MUSEUM"></div>
+                    <div class="inner">
+                        <div class="f_nav"><a href="#n">개인정보처리방침</a></div>
+                        <div class="f_info">
+                            <span>충청북도 청주시 서원구 충대로 1 충북대학교 박물관</span><br>
+                            <span>Tel. 043-261-2900 (관장실), 043-261-2901 (행정실), 043-261-2902 (학예실)</span>
+                        </div>
+                        <div class="copyright"><p>Copyright© 충북대학교 박물관. All Rights Reserved.</p></div>
+                    </div>
+                </div> <!--wrapper-->
+            </div> <!--f_bottom-->
+        </footer>
+        <aside class="top">
+            <button class="top_btn"><span>TOP</span></button>
+        </aside> 
+    </div> <!--wrap-->
+</body>
+</html>

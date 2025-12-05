@@ -1,0 +1,110 @@
+/* 모든페이지에서 중복되는 스타일 */
+    
+/* 1줄 제한 */
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;  */
+/* 2줄제한 */
+    /* overflow: hidden;
+    line-height: 1.5; 행간*줄수 = 단위 em
+    height: 3em; */
+
+    /* 글에 ...추가
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 2번째 줄 넘어갈 시 ...으로 마무리
+    -webkit-box-orient: vertical; */
+
+:root {
+    --color-sub : #767676;
+    --color-white : #fff;
+    --color-white90 : rgba(255, 255, 255, 0.9);
+    --color-white80 : rgba(255, 255, 255, 0.8);
+    --color-white70 : rgba(255, 255, 255, 0.7);
+    --color-white60 : rgba(255, 255, 255, 0.6);
+    --color-white50 : rgba(255, 255, 255, 0.5);
+    --color-white40 : rgba(255, 255, 255, 0.4);
+    --color-white30 : rgba(255, 255, 255, 0.3);
+    --color-white20 : rgba(255, 255, 255, 0.2);
+    --color-white10 : rgba(255, 255, 255, 0.1);
+    --header-h : 200px;
+    --wrapper-margin : 50px;
+}
+
+@media screen and (max-width:768px){
+    :root {
+        --header-h : 80px;
+        --wrapper-margin : 16px;
+    }
+}
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family: "Cormorant Infant", "Pretendard" ,"sans-serif";
+    /* 영문폰트와 한글폰트를 쓸 때
+        반드시 영문폰트는 한글이 지원되는 폰트면 안됨 
+        font-family에서 영문폰트를 먼저 선언하고 다음에 한글 폰트를 선언
+        영문폰트를 먼저 적용하고 지원이 안되는 한글을 만나면 다음 폰트가 적용 */
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-sub);
+    word-break: keep-all; /* 단어별로 줄 바꿈 */
+    word-wrap: break-word;
+    /* 단어가 너무 길었을 때 강제 줄 바꿈 */
+    overflow-x: hidden;
+}
+@media screen and (max-width:768px){
+    body {
+        font-size: 13px;
+    }
+}
+
+#wrap {
+    position: relative; /* header 정렬의 기준 */
+    overflow: hidden;
+}
+
+/* html문서 구조상 글자를 써줘야 하는데
+    글자를 안 보이게 하고 싶을 때 blind 클래스를 주면 사라짐 */
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0); /* 사각형 생성 */
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+ .wrapper {
+    width: 1260px;
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+@media screen and (max-width:1360px){
+    /* 
+    좌우 여백 50px : 1260 + 50 + 50 = 1360
+    좌우 여백 30px : 1260 + 30 + 30 = 1320
+    */
+    .wrapper {
+        width: auto;
+        margin: 0 var(--wrapper-margin); 
+    }
+}
+
+.mo_only {/* 모바일에서만 보임 */
+    display: none;
+}
+@media screen and (max-width:768px){
+    .mo_only {/* 모바일에서만 보임 */
+        display: block;
+    }
+    .pc_only {/* pc버전에서만 보임 */
+        display: none;
+    }   
+}
+
+::selection {
+    background-color: #DDE7E3;
+}
